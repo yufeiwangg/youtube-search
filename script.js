@@ -3,7 +3,7 @@ $(document).ready(function(){
 const reloadBtn = document.getElementById('search-button');
 const hideToggle = document.getElementById('hide-toggle');
 reloadBtn.addEventListener("click", reload);
-const API = secrets.apikey;
+const API = "AIzaSyAWpKIcScj1dNTRfV0yMiU-ICDCzhehJdw";
 const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${document.getElementById("search-bar").value || emptySearch()}&key=${API}`;
 
 function reload(){

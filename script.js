@@ -20,7 +20,6 @@ function emptySearch(){
 fetch(url)
   .then(response => response.json())
   .then(data => {
-    console.log("data items[0] (id)" + data.items[0].id.videoId);
     let id = data.items[0].id.videoId;
 
     resultsLoop(data);
@@ -34,7 +33,6 @@ function mainVid(id){
 }
 
 function resultsLoop(data){
-    console.log(data);
     $.each(data.items, function(i, item){
         var thumb = item.snippet.thumbnails.medium.url;
         var title = item.snippet.title;
